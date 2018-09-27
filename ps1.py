@@ -9,9 +9,11 @@ inp = input("Enter two values:  ").split(" ")
 n = int(inp[0])
 m = int(inp[1])
 if n<=1 or n >=106:
-    exit
+    print("Enter proper variable")
+    sys.exit()
 if m<=1 or m >=106:
-    exit
+    print("Enter proper variable")
+    sys.exit()
 #a list
 a=[]
 str1=[]

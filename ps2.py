@@ -1,5 +1,5 @@
 ###### this is the second .py file ###########
-
+import sys
 #rotate function
 #input : list an l and length n
 #output : rotate the list by  n and return the output list
@@ -15,6 +15,15 @@ inp = input("Enter three values:  ").split(" ")
 k1 = int(inp[0])
 k2 = int(inp[1])
 k3 = int(inp[2])
+if k1<1 or k1 >151:
+    print("Enter proper variable")
+    sys.exit()
+if k2<1 or k2 >151:
+    print("Enter proper variable")
+    sys.exit()
+if k2<1 or k2 >151:
+    print("Enter proper variable")
+    sys.exit()
 
 # different parts regular expressions for matching
 part1=[]
@@ -29,6 +38,10 @@ str2=[]
 str3=[]
 #input string
 string = input("Enter the string:  ")
+if len(string)<1 or len(string) >151:
+    print("Enter proper variable")
+    sys.exit()
+
 #convert to string
 string=list(string)
 #divide the string into 3 parts
