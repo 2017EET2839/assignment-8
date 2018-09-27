@@ -10,7 +10,7 @@ def rotate(l, n):
 #!/usr/bin/python
 ####### write your code here ##########
 #get input
-inp = raw_input("Enter three values:  ").split()
+inp = input("Enter three values:  ").split(" ")
 #divide it into 3 parts
 k1 = int(inp[0])
 k2 = int(inp[1])
@@ -28,7 +28,7 @@ str1=[]
 str2=[]
 str3=[]
 #input string
-string = raw_input("Enter the string:  ")
+string = input("Enter the string:  ")
 #convert to string
 string=list(string)
 #divide the string into 3 parts
