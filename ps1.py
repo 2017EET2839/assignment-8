@@ -8,6 +8,10 @@ inp = input("Enter two values:  ").split(" ")
 #give input to the 
 n = int(inp[0])
 m = int(inp[1])
+if n<=1 or n >=106:
+    exit
+if m<=1 or m >=106:
+    exit
 #a list
 a=[]
 str1=[]
@@ -40,6 +44,7 @@ for x in range(n):
         if(Matrix1[x][y]==1):
             start=0
             valid=1
+            #while valid increase valid
             while (valid==1):
                 if(x>=start):
                     if(Matrix1[x-start][y]==1):
