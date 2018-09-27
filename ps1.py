@@ -4,7 +4,7 @@ import copy
 ####### write your code here ##########
 inp = raw_input("Enter two values:  ").split()
 n = int(inp[0])
-m = int(inp[0])
+m = int(inp[1])
 a=[]
 str1=[]
 for i in range(n):
@@ -28,6 +28,7 @@ for x in range(n):
     for y in range(m):        
         if(Matrix1[x][y]==1):
             start=0
+            valid=1
             while (valid==1):
                 if(x>=start and Matrix[x-start][y]==1):
                     pass
