@@ -49,16 +49,22 @@ rotate(str2, k2)
 #print(str3)
 rotate(str3, k3)
 #rotating the entire string according to developed lists
+l=0
+m=0
+n=0
 for i in range(len(string)):
     if string[i] in part1:
         #print(part1.index(string[i]))
         string[i]=str1[(l-k1)%len(str1)]
+        l+=1
         pass
     if string[i] in part2:
         string[i]=str2[(m-k2)%len(str2)]
+        m+=1
         pass
     if string[i] in part3:
         string[i]=str3[(n-k3)%len(str3)]
+        n+=1
         pass
 final_output = ''.join(string)
 #print the final output
