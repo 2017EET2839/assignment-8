@@ -86,6 +86,7 @@ for x in range(n):
                 else:
                     valid=0
                     break
+                
                 start=start+1
             if(max2<max1 and max1<start):
                 max2=max1
@@ -93,6 +94,8 @@ for x in range(n):
                 max1=start
             mat+=[start]
             #print(start,x,y)
+if(max2==0):
+    max2+=1
 print(4*(max1-1)+1,4*(max2-1)+1)
 #print(mat)
 
